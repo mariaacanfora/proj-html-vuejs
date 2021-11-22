@@ -31,7 +31,7 @@
           <h4>WE ARE PROFESSIONAL</h4>
           <h2>Full-Service Solution</h2>
           <div class="row gx-5">        
-              <FullServiceCard v-for="(item, i) in fullServiceList" :key="i" :elementList="item"></FullServiceCard>
+              <FullServiceCard v-for="(item, i) in fullServiceList" :key="'service' + i" :elementList="item"></FullServiceCard>
           </div>
         </div>
       </div>
@@ -58,29 +58,8 @@
           <h4>HAPPY CUSTOMERS</h4>
           <h2>Testimonials</h2>
           <div class="row">
-            <div class="col">
-              <div class="testimonial-container">
-                <img src="../assets/img/avada-movers-johndoe-final-200x200.jpg" alt="john doe" class="rounded-circle w-25">
-                <h3>John Doe</h3>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"</p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="testimonial-container">
-                <img src="../assets/img/avada-movers-johndoe-final-200x200.jpg" alt="john doe" class="rounded-circle w-25">
-                <h3>John Doe</h3>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"</p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="testimonial-container">
-                <img src="../assets/img/avada-movers-johndoe-final-200x200.jpg" alt="john doe" class="rounded-circle w-25">
-                <h3>John Doe</h3>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"</p>
-              </div>
-            </div>
+            <TestimonialCard v-for="(item, i) in testimonialsList" :key="'testimonial' + i" :test="item"></TestimonialCard>
+              
           </div>
           <button class="btn rounded-pill personal-btn">READ MORE TESTIMONIALS</button>
         </div>
@@ -104,8 +83,9 @@
 
 <script>
 import FullServiceCard from './FullServiceCard.vue'
+import TestimonialCard from './TestimonialCard.vue'
 export default {
-  components: { FullServiceCard },
+  components: { FullServiceCard, TestimonialCard },
 name: "Main",
 data(){
     return {
@@ -127,6 +107,27 @@ data(){
                 title: "Coast To Coast",
                 txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus corporis, quisquam necessitatibus minus ullam earum quis quo recusandae. Nisi qui consequuntur aliquam ducimus praesentium natus? Alias voluptatum accusantium numquam."
             },
+        ],
+
+        testimonialsList: [
+            {
+                img: require("../assets/img/avada-movers-johndoe-final-200x200.jpg"),
+                name: "John Doe",
+                txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"
+            },
+
+            {
+                img: require("../assets/img/avada-movers-janedoe-final-200x200.jpg"),
+                name: "Jane Doe",
+                txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"
+            },
+
+            {
+                img: require("../assets/img/avada-movers-johnsmith-final-200x200.jpg"),
+                name: "John Smith",
+                txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"
+            },
+
         ]
     }
 }
