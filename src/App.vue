@@ -2,143 +2,8 @@
   <div id="app">
     <Header :navList="navList" :iconList="iconList"></Header>
 
-    <main>
-      <div class="hero-section ">
-        <div class="container text-center">
-          <h4>MOVING WITHOUT THE HASSLE</h4>
-          <h1>WE MAKE IT SIMPLE</h1>
-          <h4>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h4>
-        </div>
-      </div>
+    <Main></Main>
 
-      <div class="free-quote-section">
-        <div class="container text-center text-light">
-          <h4><i class="fa fa-paper-plane-o" aria-hidden="true"></i> GET A FREE QUOTE ONLINE NOW!</h4>
-        </div>
-      </div>
-
-      <div class="winning-section general-section">
-        <div class="container text-center">
-          <h4>HEADACHE FREE</h4>
-          <div class="row justify-content-center">
-            <div class="col-4"><h2>Award Winning Moving Company</h2></div>
-            <div class="col-9"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos unde officiis dolorum deserunt sunt explicabo quidem aspernatur odit tempora vero molestiae quae voluptate tenetur iure repellat amet, labore rem! Nostrum.</p></div>
-          </div>
-          <button class="btn rounded-pill personal-btn">READ OUR TESTIMONIALS</button>
-          
-        </div>
-      </div>
-
-      <div class="full-service-section general-section">
-        <div class="container text-center">
-          <h4>WE ARE PROFESSIONAL</h4>
-          <h2>Full-Service Solution</h2>
-          <div class="row gx-5">
-            <div class="col">
-              <div class="p-3 bg-card">
-                <img src="@/assets/img/avada-movers-serviceonephoto-final-400x255.jpg" alt="two man teams">
-                <div class="card-txt">
-                  <h3>Two Man Teams</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus corporis, quisquam necessitatibus minus ullam earum quis quo recusandae. Nisi qui consequuntur aliquam ducimus praesentium natus? Alias voluptatum accusantium numquam.</p>
-                  <button class="btn rounded-pill personal-btn">READ MORE</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 bg-card">
-                <img src="@/assets/img/avada-movers-serviceonephoto-final-400x255.jpg" alt="two man teams">
-                <div class="card-txt">
-                  <h3>Two Man Teams</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus corporis, quisquam necessitatibus minus ullam earum quis quo recusandae. Nisi qui consequuntur aliquam ducimus praesentium natus? Alias voluptatum accusantium numquam.</p>
-                  <button class="btn rounded-pill personal-btn">READ MORE</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 bg-card">
-                <img src="@/assets/img/avada-movers-serviceonephoto-final-400x255.jpg" alt="two man teams">
-                <div class="card-txt">
-                  <h3>Two Man Teams</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus corporis, quisquam necessitatibus minus ullam earum quis quo recusandae. Nisi qui consequuntur aliquam ducimus praesentium natus? Alias voluptatum accusantium numquam.</p>
-                  <button class="btn rounded-pill personal-btn">READ MORE</button>
-                </div>
-              </div>
-            </div>
-
-            
-
-            
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="ease-section general-section">
-        <div class="container">
-          <div class="row justify-content-end">
-              <div class="col-6 text-center">
-                <div class="p-3 bg-card">
-                  <div class="card-txt">
-                    <h4>WE REMOVE THE HEADACHE FROM MOVING</h4>
-                    <h2>Move With Ease</h2>
-                    <p>With our super simple service we can take you from getting a quote, right through to being in your new home with all of your belongings securely packed and safely delivered, even in the rooms of your choice. </p>
-                    <button class="btn rounded-pill personal-btn">GET A FREE QUOTE NOW</button>
-                  </div>
-                </div>
-              </div>
-        </div>
-        </div>
-      </div>
-
-      <div class="testimonial-section general-section">
-        <div class="container text-center">
-          <h4>HAPPY CUSTOMERS</h4>
-          <h2>Testimonials</h2>
-          <div class="row">
-            <div class="col">
-              <div class="testimonial-container">
-                <img src="./assets/img/avada-movers-johndoe-final-200x200.jpg" alt="john doe" class="rounded-circle w-25">
-                <h3>John Doe</h3>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"</p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="testimonial-container">
-                <img src="./assets/img/avada-movers-johndoe-final-200x200.jpg" alt="john doe" class="rounded-circle w-25">
-                <h3>John Doe</h3>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"</p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="testimonial-container">
-                <img src="./assets/img/avada-movers-johndoe-final-200x200.jpg" alt="john doe" class="rounded-circle w-25">
-                <h3>John Doe</h3>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"</p>
-              </div>
-            </div>
-          </div>
-          <button class="btn rounded-pill personal-btn">READ MORE TESTIMONIALS</button>
-        </div>
-      </div>
-
-      <div class="request-section general-section">
-        <div class="container text-center">
-          <h2>
-            Request A Free Quote
-          </h2>
-          <div class="row justify-content-center">
-            <div class="col-7">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ut, praesentium omnis neque sint inventore pariatur possimus facilis nobis minima architecto labore ea, ipsa non magni itaque doloremque ad. Praesentium.</p>
-            </div>
-          </div>
-          <button class="btn rounded-pill personal-btn">CLICK HERE</button>
-        </div>
-      </div>
-    </main>
 
     <footer>
       <div class="general-section">
@@ -197,12 +62,14 @@
 
 <script>
 import Header from './components/Header.vue'
+import Main from './components/Main.vue'
 //import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Main
     
   },
 
