@@ -14,17 +14,8 @@
         </div>
       </div>
 
-      <div class="winning-section general-section">
-        <div class="container text-center">
-          <h4>HEADACHE FREE</h4>
-          <div class="row justify-content-center">
-            <div class="col-4"><h2>Award Winning Moving Company</h2></div>
-            <div class="col-9"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos unde officiis dolorum deserunt sunt explicabo quidem aspernatur odit tempora vero molestiae quae voluptate tenetur iure repellat amet, labore rem! Nostrum.</p></div>
-          </div>
-          <button class="btn rounded-pill personal-btn">READ OUR TESTIMONIALS</button>
-          
-        </div>
-      </div>
+      <TxtSection :actualSection="txtSectionList[0]"></TxtSection>
+      <!-- <TxtSection class="winning-section" h4Title="HEADACHE FREE" h2Title="Award Winning Moving Company" pTxt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, amet. Praesentium deserunt debitis repellendus. Blanditiis rerum accusamus aperiam cum est consequuntur magni corporis! Porro blanditiis eos officia dicta quasi quidem." btnTxt="READ OUT TESTIMONIALS"></TxtSection> -->
 
       <div class="full-service-section general-section">
         <div class="container text-center">
@@ -65,27 +56,18 @@
         </div>
       </div>
 
-      <div class="request-section general-section">
-        <div class="container text-center">
-          <h2>
-            Request A Free Quote
-          </h2>
-          <div class="row justify-content-center">
-            <div class="col-7">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ut, praesentium omnis neque sint inventore pariatur possimus facilis nobis minima architecto labore ea, ipsa non magni itaque doloremque ad. Praesentium.</p>
-            </div>
-          </div>
-          <button class="btn rounded-pill personal-btn">CLICK HERE</button>
-        </div>
-      </div>
+      <TxtSection :actualSection="txtSectionList[1]"></TxtSection>
+      <!-- <TxtSection class="request-section" h2Title="Request a Free Quote" pTxt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, amet. Praesentium deserunt debitis repellendus. Blanditiis rerum accusamus aperiam cum est consequuntur magni corporis! Porro blanditiis eos officia dicta quasi quidem." btnTxt="CLICK HERE"></TxtSection> -->
+
     </main>
 </template>
 
 <script>
 import FullServiceCard from './FullServiceCard.vue'
 import TestimonialCard from './TestimonialCard.vue'
+import TxtSection from './TxtSection.vue'
 export default {
-  components: { FullServiceCard, TestimonialCard },
+  components: { FullServiceCard, TestimonialCard, TxtSection },
 name: "Main",
 data(){
     return {
@@ -128,7 +110,25 @@ data(){
                 txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus mollitia aperiam nostrum laborum, beatae perferendis quae excepturi, consequuntur, debitis impedit adipisci delectus omnis magni minus. Quidem voluptatem mollitia molestiae!"
             },
 
+        ],
+
+        txtSectionList: [
+          {
+            name: "winning-section",
+            h4Title: "HEADACHE FREE",
+            h2Title: "Award Winning Moving Company",
+            pTxt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, amet. Praesentium deserunt debitis repellendus. Blanditiis rerum accusamus aperiam cum est consequuntur magni corporis! Porro blanditiis eos officia dicta quasi quidem.",
+            btnTxt: "READ OUT TESTIMONIALS"
+          },
+
+          {
+            name: "request-section",
+            h2Title: "Request a Free Quote",
+            pTxt: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, amet. Praesentium deserunt debitis repellendus. Blanditiis rerum accusamus aperiam cum est consequuntur magni corporis! Porro blanditiis eos officia dicta quasi quidem.",
+            btnTxt: "CLICK HERE"
+          },
         ]
+
     }
 }
 }
@@ -157,12 +157,8 @@ main{
   }
 }
 
-.general-section{
-  padding: $py-section 0;
-}
-
 .winning-section{
-  background-color: $mercury;
+  background-color: #F2F5F8;
 }
 
 
