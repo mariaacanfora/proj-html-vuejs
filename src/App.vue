@@ -22,7 +22,6 @@ export default {
     Header,
     Main,
     Footer
-    
   },
 
   data(){
@@ -175,6 +174,15 @@ body{
   p{
     font-weight: normal;
     padding-bottom: 2rem;
+  }
+
+  .btn{
+    transition: transform .3s;
+  }
+
+  .btn:hover{
+      transform: scale(1.3);
+      color: white;
   }
 
   .personal-btn{

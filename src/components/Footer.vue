@@ -55,11 +55,10 @@ export default {
 @import '@/styles/toImport.scss';
 
 footer{
-  .col-4{
-    p{
-      padding-top: 2rem;
-    }
-    
+  .row{
+      li:hover{
+        transform: translateX(0.2rem);   
+      }
   }
 
   a{

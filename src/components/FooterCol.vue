@@ -3,7 +3,7 @@
         <h4 class="pb-4 text-dark">{{title}}</h4>
         <ul class="list-unstyled" v-if="list">
         <li v-for="(item, i) in list" :key="'C' + i" class="pb-4">
-            > <a :href="item.href" class="text-dark">{{item.link}}</a>
+            > <a href="#" class="text-dark">{{item.link}}</a>
         </li>
         </ul>
         <div v-else>
@@ -19,8 +19,8 @@ export default {
     props: {
         list: Array,
         title: String,
-        txt: String
-    }
+        txt: String,
+    },
 }
 </script>
 
