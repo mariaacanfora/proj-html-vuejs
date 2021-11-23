@@ -166,7 +166,7 @@ body{
   }
 
   h4{
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: bold;
     padding-bottom: 0.75rem;
     color: $silver-chalince;

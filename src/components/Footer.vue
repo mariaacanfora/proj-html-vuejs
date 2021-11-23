@@ -55,6 +55,13 @@ export default {
 @import '@/styles/toImport.scss';
 
 footer{
+  .col-4{
+    p{
+      padding-top: 2rem;
+    }
+    
+  }
+
   a{
     text-decoration: none;    
     font-weight: normal;
