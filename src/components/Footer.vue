@@ -6,9 +6,9 @@
             <FooterCol :txt="this.txtCol" title="ABOUT"></FooterCol>
 
 
-            <FooterCol :list="navList" title="AVADA MOVERS"></FooterCol>
+            <FooterCol :list="footerList" title="AVADA MOVERS"></FooterCol>
 
-
+          
             <FooterCol :list="linkFooterList" title="RECENT POST"></FooterCol>
           </div>
         </div>
@@ -47,7 +47,18 @@ export default {
         return {
             txtCol: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, enim adipisci. Quasi incidunt similique dolor accusantium labore sequi exercitationem? Eaque voluptatibus quae obcaecati nisi? Aut laudantium earum quo numquam laborum?"
         }
+    },
+
+    computed: {
+      footerList(){
+      let newList = this.navList.filter((element) => {
+        return (element.link != "FAQ" && element.link != "Contact")
+      })
+      console.log(newList);
+      return newList
     }
+  }
+
 }
 </script>
 

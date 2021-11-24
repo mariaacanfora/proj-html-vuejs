@@ -15,10 +15,11 @@
           <div>
             <ul class="list-unstyled m-0 d-inline-block">
               <li v-for="(item, i) in navList" :key="'A' + i" class="d-inline-block px-4"  @click="onLinkClick(i)" >
-                <a href="#" class="text-decoration-none text-dark" :class="{active: i === isActive}">{{item.link}}</a>
+                <button class="btn rounded-pill personal-btn" v-if="i === (navList.length - 1)">{{item.link.toUpperCase()}}</button>
+                <a v-else href="#" class="text-decoration-none text-dark" :class="{active: i === isActive}">{{item.link}}</a>
               </li>
             </ul>
-            <button class="btn rounded-pill personal-btn">FREE QUOTE</button>
+            
           </div>
         </div>
       </div>

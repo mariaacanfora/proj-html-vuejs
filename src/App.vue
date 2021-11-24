@@ -6,7 +6,6 @@
 
     <Footer :iconList="iconList" :navList="navList" :linkFooterList="linkFooterList" :infoFooterList="infoFooterList"></Footer>
 
-    
   </div>
 </template>
 
@@ -78,6 +77,11 @@ export default {
           link: "Contact",
           href: "/contact"
         },
+
+        {
+          link: "Free Quote",
+          href: "/free quote"
+        }
       ],
 
       linkFooterList:[
@@ -134,7 +138,7 @@ export default {
         },
       ]
     }
-  }
+  },
 }
 </script>
 
@@ -181,7 +185,7 @@ body{
   }
 
   .btn:hover{
-      transform: scale(1.3);
+      transform: scale(1.1);
       color: white;
   }
 
