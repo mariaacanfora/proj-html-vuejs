@@ -2,8 +2,8 @@
     <div class="col-4">
         <h4 class="pb-4 text-dark">{{title}}</h4>
         <ul class="list-unstyled" v-if="list">
-        <li v-for="(item, i) in list" :key="'C' + i" class="pb-4" >
-            <span :class="{active: i === isActive}">> </span> <a class="text-dark" :class="{active: i === isActive}">{{item.link}}</a>
+        <li v-for="(item, i) in list" :key="'C' + i" class="pb-4" @click="$emit('input', i)">
+            <span :class="{active: i === value}">> </span> <a class="text-dark" :class="{active: i === value}" >{{item.link}}</a>
         </li>
         </ul>
         <div v-else>
@@ -20,7 +20,7 @@ export default {
         list: Array,
         title: String,
         txt: String,
-        isActive: Number
+        value: Number
     },
 }
 </script>

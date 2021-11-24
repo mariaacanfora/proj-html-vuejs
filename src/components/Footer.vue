@@ -6,7 +6,7 @@
             <FooterCol :txt="txtCol" title="ABOUT"></FooterCol>
 
 
-            <FooterCol :list="footerList" title="AVADA MOVERS" :isActive=0></FooterCol>
+            <FooterCol :list="footerList" title="AVADA MOVERS" v-model="activeIndex"></FooterCol>
 
           
             <FooterCol :list="linkFooterList" title="RECENT POST"></FooterCol>
@@ -97,7 +97,9 @@ export default {
               href: "/wordpress",
               iconClass: "d-none"
             },
-          ]
+          ],
+
+          activeIndex: 0
       }
   },
 
