@@ -3,6 +3,12 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */a.active,span.active{color:#69bf14!important}
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */footer .row li:hover{transform:translateX(.2rem)}footer a{text-decoration:none;font-weight:400;font-size:1.25rem}footer .general-section{padding:2.5rem 0}footer .footer-info-section{background-color:#69bf14;padding:2.5rem 0;color:#fff;font-weight:400}footer .footer-info-section .list-info a{color:#fff;font-size:.85rem;padding:0 .25rem}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -15,7 +21,7 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */.full-service-section img{width:100%;margin-bottom:1rem}.full-service-section .bg-card{background-color:#f2f5f8}.full-service-section .card-txt{background-color:#fff}.full-service-section .card-txt p{padding:0 .5rem}.full-service-section .card-txt .personal-btn{margin:2rem 0}
+ */.full-service-section img{width:100%;margin-bottom:1rem}.full-service-section .bg-card{background-color:#f2f5f8}.full-service-section .card-txt{background-color:#fff}.full-service-section .card-txt p{padding:0 .5rem}.full-service-section .card-txt .personal-btn{margin:2rem 0}.testimonial-container p{font-style:italic}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

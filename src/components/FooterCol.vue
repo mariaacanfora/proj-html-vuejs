@@ -2,8 +2,8 @@
     <div class="col-4">
         <h4 class="pb-4 text-dark">{{title}}</h4>
         <ul class="list-unstyled" v-if="list">
-        <li v-for="(item, i) in list" :key="'C' + i" class="pb-4">
-            > <a href="#" class="text-dark">{{item.link}}</a>
+        <li v-for="(item, i) in list" :key="'C' + i" class="pb-4" >
+            <span :class="{active: i === isActive}">> </span> <a class="text-dark" :class="{active: i === isActive}">{{item.link}}</a>
         </li>
         </ul>
         <div v-else>
@@ -20,10 +20,15 @@ export default {
         list: Array,
         title: String,
         txt: String,
+        isActive: Number
     },
 }
 </script>
 
-<style>
-
+<style lang="scss">
+@import '@/styles/toImport.scss';
+span.active,
+a.active{
+      color: $lima !important;
+}
 </style>

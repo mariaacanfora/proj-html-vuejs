@@ -3,10 +3,10 @@
       <div class="general-section">
         <div class="container">
           <div class="row">
-            <FooterCol :txt="this.txtCol" title="ABOUT"></FooterCol>
+            <FooterCol :txt="txtCol" title="ABOUT"></FooterCol>
 
 
-            <FooterCol :list="footerList" title="AVADA MOVERS"></FooterCol>
+            <FooterCol :list="footerList" title="AVADA MOVERS" :isActive=0></FooterCol>
 
           
             <FooterCol :list="linkFooterList" title="RECENT POST"></FooterCol>
@@ -35,30 +35,81 @@
 import FooterCol from './FooterCol.vue'
 export default {
   components: { FooterCol },
-    name: "Footer",
-    props: {
-        navList: Array,
-        linkFooterList: Array,
-        infoFooterList: Array,
-        iconList: Array
-    },
+  name: "Footer",
+  props: {
+      navList: Array,
+      iconList: Array
+  },
 
-    data(){
-        return {
-            txtCol: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, enim adipisci. Quasi incidunt similique dolor accusantium labore sequi exercitationem? Eaque voluptatibus quae obcaecati nisi? Aut laudantium earum quo numquam laborum?"
-        }
-    },
+  data(){
+      return {
+          txtCol: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, enim adipisci. Quasi incidunt similique dolor accusantium labore sequi exercitationem? Eaque voluptatibus quae obcaecati nisi? Aut laudantium earum quo numquam laborum?",
+          
+          linkFooterList:[
+            {
+              link: "Heading Out To College?",
+              href:"/heading-out-to-college"
+            },
 
-    computed: {
-      footerList(){
-      let newList = this.navList.filter((element) => {
-        return (element.link != "FAQ" && element.link != "Contact")
-      })
-      console.log(newList);
-      return newList
-    }
+            {
+              link: "Moving Your Business?",
+              href:"/moving-your-business"
+            },
+
+            {
+              link: "Outstanding Quality",
+              href:"/outstanding-quality"
+            },
+
+            {
+              link: "Cost of Moving",
+              href:"/cost-of-moving"
+            },
+            
+            {
+              link: "Best Moving Tips",
+              href:"/best-moving-tips"
+            },
+      
+          ],
+
+          infoFooterList: [
+            {
+              link: "Copyright 2012 - 2020",
+              href: "/copyright",
+              iconClass: "fa fa-copyright"
+            },
+
+            {
+              link: "Avada Theme by ThemeFusion",
+              href: "/avada",
+              iconClass: "d-none"
+            },
+
+            {
+              link: "All Rights Reserved",
+              href: "/rights-reserved",
+              iconClass: "d-none"
+            },
+
+            {
+              link: "Powered by WordPress",
+              href: "/wordpress",
+              iconClass: "d-none"
+            },
+          ]
+      }
+  },
+
+  computed: {
+    footerList(){
+    let newList = this.navList.filter((element) => {
+      return (element.link != "FAQ" && element.link != "Contact")
+    })
+    console.log(newList);
+    return newList
   }
-
+  },
 }
 </script>
 

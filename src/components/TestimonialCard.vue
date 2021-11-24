@@ -16,3 +16,11 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+.testimonial-container{
+  p{
+    font-style: italic;
+  }
+}
+</style>

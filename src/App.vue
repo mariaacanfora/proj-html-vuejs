@@ -4,7 +4,7 @@
 
     <Main></Main>
 
-    <Footer :iconList="iconList" :navList="navList" :linkFooterList="linkFooterList" :infoFooterList="infoFooterList"></Footer>
+    <Footer :iconList="iconList" :navList="navList"></Footer>
 
   </div>
 </template>
@@ -13,7 +13,6 @@
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
-//import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
@@ -83,60 +82,6 @@ export default {
           href: "/free quote"
         }
       ],
-
-      linkFooterList:[
-        {
-          link: "Heading Out To College?",
-          href:"/heading-out-to-college"
-        },
-
-        {
-          link: "Moving Your Business?",
-          href:"/moving-your-business"
-        },
-
-        {
-          link: "Outstanding Quality",
-          href:"/outstanding-quality"
-        },
-
-        {
-          link: "Cost of Moving",
-          href:"/cost-of-moving"
-        },
-        
-        {
-          link: "Best Moving Tips",
-          href:"/best-moving-tips"
-        },
-        
-      ],
-
-      infoFooterList: [
-        {
-          link: "Copyright 2012 - 2020",
-          href: "/copyright",
-          iconClass: "fa fa-copyright"
-        },
-
-        {
-          link: "Avada Theme by ThemeFusion",
-          href: "/avada",
-          iconClass: "d-none"
-        },
-
-        {
-          link: "All Rights Reserved",
-          href: "/rights-reserved",
-          iconClass: "d-none"
-        },
-
-        {
-          link: "Powered by WordPress",
-          href: "/wordpress",
-          iconClass: "d-none"
-        },
-      ]
     }
   },
 }
